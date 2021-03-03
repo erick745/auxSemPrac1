@@ -1,14 +1,12 @@
-const mongoose=require('./connect');
+const mongoose = require("./connect");
 
-const user={
-    name:String,
-    password:String,
-    email:String,
-    cursos:[{
-        nombre:String
-    }]
+const user = {
+  foto: String,
+  nombre: String,
+  email: String,
+  password: String,
 };
 
-const modeluser=mongoose.model('user',user);
+const modeluser = mongoose.model("user", user);
 
-module.exports=modeluser;
+module.exports = modeluser;
